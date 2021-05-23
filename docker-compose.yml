@@ -1,5 +1,12 @@
 version: "2"
 services:
+  mongodb_container:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+    ports:
+      - 27017:27017
   kafdrop:
     image: obsidiandynamics/kafdrop
     restart: "no"
