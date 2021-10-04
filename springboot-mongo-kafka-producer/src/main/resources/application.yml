@@ -7,7 +7,7 @@ spring:
       port: 27017
       username: root
       password: rootpassword
-      database: kafkamongodb
+      database: admin
       repositories:
         enabled: true
 logging:
